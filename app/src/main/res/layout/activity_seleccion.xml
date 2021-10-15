@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color1"
+    android:orientation="vertical"
+    tools:context=".Seleccion">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ListView
+        android:id="@+id/listActividades"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:background="#00CAD3BF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="regresar"
+            android:text="Regresar"
+            android:textStyle="bold"
+            app:backgroundTint="#183b5c"
+            app:icon="@android:drawable/ic_menu_revert" />
+    </LinearLayout>
+</LinearLayout>
